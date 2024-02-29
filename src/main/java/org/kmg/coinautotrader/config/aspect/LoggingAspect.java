@@ -28,17 +28,17 @@ public class LoggingAspect {
 	public void serviceAdvice() {
 	}
 
-	@Before("controllerAdvice()")
+	@Before("allAdvice()")
 	public void requestLogging(JoinPoint joinPoint) {
 		MDC.put(TRACING_ID, UUID.randomUUID().toString());
 	}
 
-	@AfterReturning(pointcut = "controllerAdvice()", returning = "returnValue")
+	@AfterReturning(pointcut = "allAdvice()", returning = "returnValue")
 	public void requestLogging(JoinPoint joinPoint, Object returnValue) {
 		MDC.clear();
 	}
 
-	@AfterThrowing(pointcut = "controllerAdvice()", throwing = "exception")
+	@AfterThrowing(pointcut = "allAdvice()", throwing = "exception")
 	public void requestLogging(JoinPoint joinPoint, Exception exception) {
 		MDC.clear();
 	}
