@@ -2,7 +2,7 @@ package org.kmg.coinautotrader.application.controller;
 
 import java.util.List;
 
-import org.kmg.coinautotrader.application.response.AccountResponse;
+import org.kmg.coinautotrader.application.response.AccountsResponse;
 import org.kmg.coinautotrader.application.service.AccountService;
 import org.kmg.coinautotrader.common.response.CommonResponse;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +18,7 @@ public class AccountController {
 	private final AccountService accountService;
 
 	@GetMapping("/api/v1/accounts")
-	public CommonResponse<List<AccountResponse>> getAccounts() {
+	public CommonResponse<List<AccountsResponse>> getAccounts() {
 		return CommonResponse.success(accountService.getAccounts());
 	}
 }

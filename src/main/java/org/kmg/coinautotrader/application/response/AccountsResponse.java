@@ -2,7 +2,7 @@ package org.kmg.coinautotrader.application.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public record AccountResponse(
+public record AccountsResponse(
 	String currency,
 	String balance,
 	String locked,
