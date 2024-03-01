@@ -2,9 +2,9 @@ package org.kmg.coinautotrader.application.api;
 
 import java.util.List;
 
-import org.kmg.coinautotrader.application.request.OrdersRequest;
-import org.kmg.coinautotrader.application.response.AccountsResponse;
-import org.kmg.coinautotrader.application.response.OrdersResponse;
+import org.kmg.coinautotrader.application.dto.request.OrdersRequest;
+import org.kmg.coinautotrader.application.dto.response.AccountsResponse;
+import org.kmg.coinautotrader.application.dto.response.OrdersResponse;
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;

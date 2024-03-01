@@ -1,4 +1,4 @@
-package org.kmg.coinautotrader.application.response;
+package org.kmg.coinautotrader.application.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -12,18 +12,18 @@ public record OrdersResponse(
 	String market,
 	@JsonProperty("created_at")
 	String createdAt,
-	Long volume,
+	String volume,
 	@JsonProperty("remaining_volume")
-	Long remainingVolume,
+	String remainingVolume,
 	@JsonProperty("reserved_fee")
-	Long reservedFee,
+	String reservedFee,
 	@JsonProperty("remaining_fee")
-	Long remainingFee,
+	String remainingFee,
 	@JsonProperty("paid_fee")
-	Long paidFee,
-	Long locked,
+	String paidFee,
+	String locked,
 	@JsonProperty("executed_volume")
-	Long executedVolume,
+	String executedVolume,
 	@JsonProperty("trades_count")
 	Integer tradesCount
 ) {

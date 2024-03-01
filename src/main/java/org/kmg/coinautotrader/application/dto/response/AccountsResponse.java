@@ -1,4 +1,4 @@
-package org.kmg.coinautotrader.application.response;
+package org.kmg.coinautotrader.application.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
